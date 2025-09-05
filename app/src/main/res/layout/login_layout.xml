@@ -13,12 +13,16 @@
         android:id="@+id/imgLogin"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/logo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
         android:hint="Insira seu e-mail"
         app:endIconMode="clear_text"
         app:startIconDrawable="@drawable/baseline_email">
@@ -34,6 +38,7 @@
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
         android:hint="Insira sua senha"
         app:endIconMode="password_toggle"
         app:startIconDrawable="@drawable/baseline_lock">
@@ -45,15 +50,24 @@
             android:maxLength="20" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/txtCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="5sp"
+        android:text="Não tem cadastro? Clique aqui!!!" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnEntrar"
-        android:padding="20dp"
-        android:textSize="18sp"
-        app:cornerRadius="10dp"
-        android:textAllCaps="true"
-        app:backgroundTint="#673AB7"
+        style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Entrar" />
+        android:layout_marginTop="20sp"
+        android:padding="20dp"
+        android:text="Entrar"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        app:cornerRadius="10dp" />
 
 </LinearLayout>
