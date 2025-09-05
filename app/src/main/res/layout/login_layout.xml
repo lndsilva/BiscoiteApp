@@ -17,6 +17,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtEmail"
+        app:startIconDrawable="@drawable/baseline_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Insira seu e-mail">
@@ -30,6 +31,7 @@
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_lock"
         android:hint="Insira sua senha">
 
         <com.google.android.material.textfield.TextInputEditText
