@@ -18,6 +18,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtEmail"
         app:startIconDrawable="@drawable/baseline_email"
+        app:endIconMode="clear_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Insira seu e-mail">
@@ -29,6 +30,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtSenha"
+        app:endIconMode="password_toggle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:startIconDrawable="@drawable/baseline_lock"
