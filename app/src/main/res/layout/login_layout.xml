@@ -17,28 +17,43 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtEmail"
-        app:startIconDrawable="@drawable/baseline_email"
-        app:endIconMode="clear_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Insira seu e-mail">
+        android:hint="Insira seu e-mail"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLength="50" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtSenha"
-        app:endIconMode="password_toggle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/baseline_lock"
-        android:hint="Insira sua senha">
+        android:hint="Insira sua senha"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="20" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEntrar"
+        android:padding="20dp"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        android:textAllCaps="true"
+        app:backgroundTint="#673AB7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrar" />
 
 </LinearLayout>
